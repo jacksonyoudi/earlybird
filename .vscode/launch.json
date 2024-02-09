@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:earlybird}",
+            "name": "Debug earlybird",
+            "program": "${workspaceFolder:earlybird}/.build/debug/earlybird",
+            "preLaunchTask": "swift: Build Debug earlybird"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:earlybird}",
+            "name": "Release earlybird",
+            "program": "${workspaceFolder:earlybird}/.build/release/earlybird",
+            "preLaunchTask": "swift: Build Release earlybird"
+        }
+    ]
+}
